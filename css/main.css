@@ -3122,6 +3122,7 @@
 			transform: scale(0.8) rotate(-30deg);
 		}
 
+
 /* Main */
 
 	#main {
@@ -3569,12 +3570,6 @@
 			}
 
 		}
-
-.sticky{
-	position: fixed !important;
-	top: 0 !important;
-	width: 100% !important;
-}
 
 .badge{
 	margin-left: auto;
