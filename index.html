@@ -1,59 +1,53 @@
 <html>
     <head>
-        <title> Portfolio - Vincent Pranata</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Bootstrap CSS -->
+        <title> Portfolio - Vincent Pranata</title>        
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <!-- JS for Acclaim Badges -->
-        <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
     </head>
 
     <body>
-        <div id="wrapper">    
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">Portfolio</a>
+        <!--Navbar-->
+        <nav class="navbar">
+            <span id="label"> Vincent Pranata </span>
+            <ul>
+                <li><a href="#introduction">INTRODUCTION</a></li>
+                <li><a href="#two">SKILL SET</a></li>
+                <li><a href="#three">EXPERIENCE</a></li>
+                <li><a href="#three">FUN FACT</a></li>
+            </ul>
+        </nav>
+        
+        <div class="main">
+            <section id="introduction">
+                <div class="container" id="container-one"> 
+                    <div class="text">
+                        <h1>Introduction</h1>
+                        <p>Hi! My name is Vincent Pranata. I'm an Indonesian student
+                            in Melbourne, Australia that currently is studying Computer
+                            Science as undergraduate in RMIT University. I'm currently in
+                            my final semester and is currently looking for an internship/ job 
+                            for a Web-Designer, Data-Analyst or Front-End Developer position.
+                            Feel free to look at my social medias and my resume below.</p>
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#one">Introduction</a></li>
-                        <li><a href="#two">Skill Set</a></li>
-                        <li><a href="#three">Credential</a></li>
-                    </ul>
+                    <div class="potrait">
+                        <img src="img/self_potrait.jpg">
+                    </div>
                 </div>
-            </nav>
 
-            <div id="main">
-                <section id="one" class="main">
-                    <div class="spotlight">
-                        <div class="content">
-                            <header class="major">
-                                <h2>Introduction</h2>
-                            </header>
-                            <p>Hi! My name is Vincent Pranata. I'm an Indonesian student in Melbourne, Australia that currently is studying Computer Science as undergraduate in RMIT University. 
-                            I'm currently in my final semester and is currently looking for an internship/ job for a Web-Designer, Data-Analyst or Front-End Developer position. Feel free to look at my social medias and my resume below. </p>
-                        </div>
-                        <span class="image"><img src="img/self_potrait.jpg" alt="image" /></span>
-                    </div>
-                </section>
-
-                <section id="two" class="main">
-                    <header class="major">
-                        <h2>Skill Set</h2>
-                    </header>
-                    <p>In the time I studied in RMIT, I learned and become accustomed with multiple coding languages and also frameworks. 
-                    I am also well versed in AGILE methodology and acted once for both Product Owner and Scrum Master in two different 
-                    software development projects. I have also gained soft skills both through RMIT Credentials study and on-hand volunteerings.
-                    Below are the ratings that I think appropiate for my level of knowledge in each categories of University level (out of 5 <span class="fa fa-star"></span>).</p>
-                    <ul class="features">
+            <section id="skill">
+                <div class="container" id="container-two"> 
+                    <div class="text">
+                        <h1>Skill Set</h1>
+                        <p>In the time I studied in RMIT, I learned and become accustomed with multiple 
+                        coding languages and also frameworks. I am also well versed in AGILE methodology 
+                        and acted once for both Product Owner and Scrum Master in two different software 
+                        development projects. I have also gained soft skills both through RMIT Credentials 
+                        study and on-hand volunteerings. Below are the ratings that I think appropiate for 
+                        my level of knowledge in each categories of University level (out of 5 <span class="fa fa-star"></span>). </p>
+                   </div> <br>
+                   <ul class="tables">
                         <li>
-                            <span class="icon major style1 fa-code"></span>
+                            <span><p class="fa fa-code fa-3x"></p></span>
                             <h3>Hard Skill</h3>
                             <p>
                                 <table>
@@ -125,7 +119,7 @@
                             </p>
                         </li>
                         <li>
-                            <span class="icon major style3 fa-cogs"></span>
+                            <span><p class="fa fa-cogs fa-3x"></p></span>
                             <h3>Soft Skills</h3>
                             <p>
                                 <table>
@@ -169,7 +163,7 @@
                             </p>
                         </li>
                         <li>
-                            <span class="icon major style5 fa-comment"></span>
+                            <span> <p class="fa fa-comment fa-3x"></p></span>
                             <h3>Language</h3>
                             <p>
                                 <table>
@@ -189,71 +183,56 @@
                             </p>
                         </li>
                     </ul>
-                </section>
+                </div>
+            </section>
 
-                <!-- Third Section -->
-                <section id="three" class="main">
-                    <header class="major">
-                        <h2>Credentials</h2>
-                    </header>
-                    <h3>RMIT Creds</h3>
-                    <p>Below are the credentials/ badges that I have received by completing RMIT Creds Courses and also workshops.</p>
-                    <div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ef31740f-6b81-4cb5-a88c-44ca7535ac65" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8b8b0e8e-2d80-4110-ba59-0ecc69d94032" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="04b7fe74-d931-495f-a700-7c76a6bd5bd6" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2e07649b-190b-469d-84de-0565a7f9cd78" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1362d55a-2ac9-433f-9b9b-033f104e2359" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4d6dedbf-c755-4205-8485-49575abc8272" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4afc2c47-ef38-4676-8ef1-7c25b03986bd" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3af35696-266b-42fe-aa0b-0313228d335a" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d1a4d571-4117-4fbc-a57d-4f5d4466f313" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="fe65f854-e5cb-41c6-9d41-2f44f666c526" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1a01b5bc-ca36-4d89-8514-a6b819ec39ae" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="62abe3a4-61a9-47dd-bf5c-8f2c585a9d2c" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3e47e2dd-c116-4d69-b1f3-0787d905e492" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="49177241-5b68-479b-a470-c76def59e7cb" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="16ba1f14-87ef-4d7e-bb7b-63573106fd28" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="43f9c7ec-6fd0-4611-b761-b16fba07cf17" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f917641e-165c-4136-a868-f4e5da7a65bd" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="cae3e1ec-bbc9-47df-a39a-558a05e8e41d" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f0625532-4b98-428a-9275-c519d5b0c85a" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="72fd7b30-753f-4ab6-83c1-e8e7414eeec4" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2b185acd-b286-4e14-800c-5b04079bbc86" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="10593b4f-242a-4b84-8975-e0835dfd87d2" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2568b9d9-a6bd-49c2-82ed-acad1d251392" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b87df3e8-c1ea-4d40-8cc7-72a531e14d06" data-share-badge-host="https://www.youracclaim.com"></div>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="aefdcd76-420a-45d6-af57-1ed0c070e1f0" data-share-badge-host="https://www.youracclaim.com"></div>
-                    </div>
-                </section>
-            </div>
+            <section id="experience">
+                <div class="container" id="container-three"> 
+                    <div class="text">
+                        <h1>Experience</h1>
+                        <p>
 
-            <!-- Footer -->
-            <footer id="footer">
-                <section>
-                    <h2>Contact Details</h2>
-                    <dl class="alt">
-                        <dt>Address</dt>
-                        <dd>907/367 Burwood Road &bull; Hawthorn, VIC 3122 &bull; AU</dd>
-                        <dt>Phone</dt>
-                        <dd>(+61) 426-730-588</dd>
-                        <dd>(+62) 818-0371-6788</dd>
-                        <dt>Email</dt>
-                        <dd>vincentpranata99@gmail.com</dd>
-                    </dl>
-                    <ul class="icons">
-                        <li><a href="https://www.facebook.com/vincentpranata99" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://www.instagram.com/vincentpranata_/" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
-                        <li><a href="https://github.com/vincent-pranata" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-                        <li><a href="https://www.linkedin.com/in/vincent-pranata/" class="icon fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="Vincent Pranata Resume.pdf" class="icon fa-file alt"><span class="label">Resume</span></a></li>
-                    </ul>
-                </section>
-                <p class="copyright">&copy; Vincent Pranata. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-            </footer>
+                        </p>
+                   </div>
+                </div>
+            </section>
+
+            <section id="fun-fact">
+                <div class="container" id="container-four"> 
+                    <div class="text">
+                        <h1>Fun Fact</h1>
+                        <p>
+
+                        </p>
+                   </div>
+                </div>
+            </section>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{ this.theme.jQuery_version }}/jquery.min.js"></script>
-        <script src="{{ ['assets/js/jquery.min.js','assets/js/jquery.scrollex.min.js', 'assets/js/jquery.scrolly.min.js', 'assets/js/skel.min.js', 'assets/js/util.js', 'assets/js/main.js']|theme }}"></script>
+        <!-- Footer -->
+        <footer id="footer">
+            <section id="footer-top">
+                <h2>Contact Details</h2>
+                <dl class="alt">
+                    <dt>Address</dt>
+                    <dd>907/367 Burwood Road &bull; Hawthorn, VIC 3122 &bull; AU</dd>
+                    <dt>Phone</dt>
+                    <dd>(+61) 426-730-588</dd>
+                    <dd>(+62) 818-0371-6788</dd>
+                    <dt>Email</dt>
+                    <dd>vincentpranata99@gmail.com</dd>
+                </dl>
+                <ul class="icons">
+                    <li><a href="https://www.facebook.com/vincentpranata99" target="_blank" class="fa fa-facebook fa-lg"></a></li>
+                    <li><a href="https://www.instagram.com/vincentpranata_/" target="_blank" class="fa fa-instagram fa-lg"></a></li>
+                    <li><a href="https://github.com/vincent-pranata" target="_blank" class="fa fa-github fa-lg"></a></li>
+                    <li><a href="https://www.linkedin.com/in/vincent-pranata/" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+                    <li><a href="Vincent Pranata Resume.pdf" target="_blank" class="fa fa-file fa-lg"></a></li>
+                </ul>
+            </section>
+            <section id="footer-bottom">
+                <p class="copyright">&copy; Vincent Pranata</p>
+            </section>
+        </footer>
     </body>
 </html>
