@@ -5,6 +5,7 @@
 
 html{
     color: white;
+    scroll-behavior: smooth;
 }
 
 /*List*/
@@ -25,6 +26,9 @@ a:visited{
 
 /*Navbar*/
 .navbar{
+    position: sticky;
+    top: 0;
+    z-index:1;
     margin: -10px -20px 0px -20px;
     padding: 15px 3px 25px 25px;
     background-color: #171b2a;;
@@ -79,15 +83,16 @@ a:visited{
     background-color: grey;
 }
 
-
-.text h1{
-    font-size:2.5vw;
+.text h1,
+.text p{
     text-align: center;
 }
 
-.text p{
-    font-size: 1.3vw;
-    text-align: center;
+#introduction,
+#skill,
+#experience,
+#fun-fact{
+    padding-top: 60px;
 }
 
 /*Introduction*/
@@ -147,12 +152,130 @@ a:visited{
 
 /*Experience*/
 #container-three{
+    min-width: 700px;
+    max-width: 1000px;
     margin: 100px 10%;
+}
+
+#experience .text{
+    display: block;
+    width: 60%;
+    margin-right: auto;
+}
+
+
+#experience .slideshow .images img{
+    width: 100%;
+    min-width: 300px;
+    min-height: 125px;
+    max-width: 400px;
+    max-height: 250px;
+}
+
+/*Left & Right Arrows*/
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*Dots for image*/
+#experience .slideshow .image_dot{
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* fade animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/*Slideshow*/
+.slideshow{
+    display: block;
+    width: 45%;
+    margin: auto;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.images,
+.images-ff{
+    display: none;
 }
 
 /*Fun Fact*/
 #container-four{
     margin: 100px 0px 100px 25%;
+}
+
+#fun-fact ul{
+    list-style-type: initial;
+    display: initial;
+}
+
+#fun-fact ul li{
+    margin-left: 10px;
+}
+
+#fun-fact .text{
+    display: block;
+    width: 60%;
+    margin-right: auto;
+}
+
+#fun-fact .slideshow .images-ff img{
+    width: 100%;
+    border-radius: 25%;;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 /*Footer*/

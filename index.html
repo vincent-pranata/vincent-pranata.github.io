@@ -3,17 +3,18 @@
         <title> Portfolio - Vincent Pranata</title>        
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/main.js"></script>
     </head>
 
-    <body>
+    <body onload="init()">
         <!--Navbar-->
         <nav class="navbar">
             <span id="label"> Vincent Pranata </span>
             <ul>
                 <li><a href="#introduction">INTRODUCTION</a></li>
-                <li><a href="#two">SKILL SET</a></li>
-                <li><a href="#three">EXPERIENCE</a></li>
-                <li><a href="#three">FUN FACT</a></li>
+                <li><a href="#skill">SKILL SET</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#fun-fact">FUN FACT</a></li>
             </ul>
         </nav>
         
@@ -33,6 +34,7 @@
                         <img src="img/self_potrait.jpg">
                     </div>
                 </div>
+            </section>
 
             <section id="skill">
                 <div class="container" id="container-two"> 
@@ -190,10 +192,34 @@
                 <div class="container" id="container-three"> 
                     <div class="text">
                         <h1>Experience</h1>
-                        <p>
-
+                        <p>I have no prior working experience, but I do have experience by volunteering 
+                        in some occasions. I volunteered as a teacher, a logistic officer, a logistic 
+                        coordinator, a webmaster officer and a research assistant in some occasions. 
+                        More detail of my volunteering activities can be seen in my LinkedIn profile 
+                        or my resume below.
                         </p>
-                   </div>
+                    </div>
+                    <div class="slideshow">
+                        <div class="slideshow-container">
+                            <div class="images fade">                
+                                <img src="img/slideshow/1.JPG">
+                            </div>
+                            <div class="images fade">                
+                                <img src="img/slideshow/2.JPG">
+                            </div>
+                            <div class="images fade">                
+                                <img src="img/slideshow/3.JPG">
+                            </div>
+                            <a class="previous" onclick="next_image(-1)">&#10094;</a>
+                            <a class="next" onclick="next_image(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        <div class="image_dot">
+                            <span class="dot" onclick="current_image(1)"></span> 
+                            <span class="dot" onclick="current_image(2)"></span> 
+                            <span class="dot" onclick="current_image(3)"></span> 
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -201,10 +227,32 @@
                 <div class="container" id="container-four"> 
                     <div class="text">
                         <h1>Fun Fact</h1>
-                        <p>
-
-                        </p>
+                        <ul>
+                            <li>I don't have a High School Diploma due to going 
+                            to Autralia for RMIT Foundation Studies after I finished 
+                            my second year of highschool</li>
+                            <li>I love watching the old Top Gear UK and The Grand Tour</li>
+                            <li>I enjoy travelling, sleeping, eating, reading, and playing game. 
+                            One of the game that I currently play is AFK Arena</li>
+                            <li>I am collecting phone SIM cards from countries that I
+                            visited</li>
+                        </ul>
                    </div>
+                   <div class="slideshow">
+                    <div class="slideshow-container">
+                        <div class="images-ff fade">                
+                            <img src="img/fun-fact/rmit.png">
+                        </div>
+                        <div class="images-ff fade">                
+                            <img src="img/fun-fact/top-gear-uk.jpg">
+                        </div>
+                        <div class="images-ff fade">                
+                            <img src="img/fun-fact/the-grand-tour.jpg">
+                        </div>
+                        <div class="images-ff fade">                
+                            <img src="img/fun-fact/afk-arena.webp">
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
